@@ -14,7 +14,7 @@
 - ![alt text](https://github.com/rubenshubnerjunior/Esp32_WebServer/blob/main/Diagrama_01.jpg)
 #### A pasta "data" que foi gravada na memória SPIFFS tem os arquivos do Front End ( HTML,CSS, Javascript).
 #### Quando o navegador faz o Request o servidor de pagina Web envia os arquivos da pasta data para o navegador.
-#### Com estes arquivos o navegador exibi a GUI (Graphical User Interface ou Interface Gráfica do Usuário) conforme imagem abaixo:
+#### Com estes arquivos o navegador exibe a GUI (Graphical User Interface ou Interface Gráfica do Usuário) conforme imagem abaixo:
 - ![alt text](https://github.com/rubenshubnerjunior/Esp32_WebServer/blob/main/gui.jpg)
 #### Além da GUI também é criado no navegador um cliente de webSocket e uma lógica para enviar e receber as mensagens e mostrar o status na GUI.
 #### As mensagens trocadas entre o Esp32 e o Navegador estão no formato JSON para uma melhor escalabilidade.
@@ -23,7 +23,7 @@
 #### Como estamos usando webSocket para trocar mensagens o navegador não precisa dar refresh na página para atualizar
 #### Observar que o webSocket é assincrono e portanto é acionado quando ocorre eventos.
 #### O código web01.ino está bem comentado e seguindo as chamadas das funções a partir do setup() e depois a partir do loop() é possivel identificar as funcionalidades conforme o diagrama.
-
+#### Haaa... o módulo do lado direito do protoboard é o W5500 para conectar o Esp32 via RJ45 na rede mas ainda não implementei !!!
 #### Sugestões são bem vindas e espero que este repositório ajude em partes de projetos de outras pessoas.
 ### PY2 RHJ
  
