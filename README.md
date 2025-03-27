@@ -6,4 +6,5 @@
 - ![alt text](https://github.com/rubenshubnerjunior/Esp32_WebServer/blob/main/Diagrama_01.jpg)
 #### Como podemos observar no diagrama a memoria SPIFFS do Esp32 fica com os arquivos do Front End (HTML,CSS,Javascript).
 #### Os arquivos do Front End ficam dentro de uma pasta chamada "data" e para fazer o upload dest pasta para a memoria SPIFFS deve ficar junto com o schetch .ino
-#### Quando o navegador faz o request destes arquivos além de apresentar a interface com o usuario também passa a rodar o cliente WebSocket e a lógica que tratará as mensagens.
+- ![alt text](https://github.com/rubenshubnerjunior/Esp32_WebServer/blob/main/data.jpg)
+#### Quando o navegador faz o request dos arquivos da pasta "data" além de apresentar a interface com o usuário também passa a rodar o cliente WebSocket e a lógica que tratará as mensagens.
