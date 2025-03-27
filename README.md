@@ -7,7 +7,7 @@
 #### Como podemos observar no diagrama a memoria SPIFFS do Esp32 fica com os arquivos do Front End (HTML,CSS,Javascript).
 #### Os arquivos do Front End ficam dentro de uma pasta chamada "data" e para fazer o upload dest pasta para a memoria SPIFFS deve ficar junto com o schetch .ino
 #### Para poder fazer upload é nescessário inserir a pasta ESPFS conforme pode ser visto na imagem abaixo:
-- ![alt text](https://github.com/rubenshubnerjunior/Esp32_WebServer/blob/main/tools.jpg}
+- ![alt text](https://github.com/rubenshubnerjunior/Esp32_WebServer/blob/main/tools.jpg)
   ### Na pasta biblioteca tem o arquivo compactado desta pasta que pode ser colado conforme mostrado acima.
   #### Após isto a IDE do Arduino mostrará a aba de upload da pasta "data" conforme abaixo:
 - ![alt text](https://github.com/rubenshubnerjunior/Esp32_WebServer/blob/main/data.jpg)
