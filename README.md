@@ -13,7 +13,7 @@
 #### Olhando o diagrama simplificado temos uma ideia geral de como funciona o sistema:
 - ![alt text](https://github.com/rubenshubnerjunior/Esp32_WebServer/blob/main/Diagrama_01.jpg)
 #### A pasta "data" que foi gravada na memória SPIFFS tem os arquivos do Front End ( HTML,CSS, Javascript).
-#### Quando o navegador faz o Request o servidor de pagina Web envia os arquivos da pasta data e podemos ver na imagem abaixo:
+#### Quando o navegador faz o Request o servidor de pagina Web envia os arquivos da pasta data para o navegador.
 #### Com estes arquivos o navegador exibi a GUI (Graphical User Interface ou Interface Gráfica do Usuário) conforme imagem abaixo:
 - ![alt text](https://github.com/rubenshubnerjunior/Esp32_WebServer/blob/main/gui.jpg)
 #### Além da GUI também é criado no navegador um cliente de webSocket e uma lógica para enviar e receber as mensagens e mostrar o status na GUI.
