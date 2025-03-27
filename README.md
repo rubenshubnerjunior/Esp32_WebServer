@@ -6,7 +6,7 @@
 - ![alt text](https://github.com/rubenshubnerjunior/Esp32_WebServer/blob/main/tools.jpg)
 ### Depois disto a IDE do Arduino passará a apresentar a opção conforme imagem abaixo:
 - ![alt text](https://github.com/rubenshubnerjunior/Esp32_WebServer/blob/main/upload.jpg)
-
+#### Feito a gravação da pasta "data" na memoria SPIFFS com a pasta data a IDE está pronta para trabalhar com o codigo
 
  
 #### Para isto vamos dar uma olhada no diagrama simplificado abaixo:
