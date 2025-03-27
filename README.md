@@ -16,5 +16,6 @@
 #### Quando o navegador faz o Request o servidor de pagina Web envia os arquivos da pasta data e podemos ver na imagem abaixo:
 #### Com estes arquivos o navegador exibi a GUI conforme imagem abaixo:
 - ![alt text](https://github.com/rubenshubnerjunior/Esp32_WebServer/blob/main/gui.jpg)
+#### Além da GUI também é criado no navegador um cliente de webSocket e uma lógica para enviar e receber as mensagens e mostrar o status na GUI.
  
 
