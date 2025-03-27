@@ -1,0 +1,67 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+ 
+    <head>
+	    <meta charset="utf-8">
+		<title> Esp32 Web page</title>
+        <link rel="stylesheet" type="text/css" href="src/bootstrap.min.css">
+    </head>
+ 
+<body>
+	
+	<div class="container">
+	
+		<div class="row"> <!-- Primeira Linha Cabecalho"-->
+			<div class="col-sm-2"> </div>
+			<div class="col-sm-8"> <h3> <span  class = "label label-primary"> Teste de web page no Esp32  </span> </h3>  </div>
+			<div class="col-sm-2"> </div>
+		</div>
+		
+		<p>
+		
+		<div class="row"> <!-- Segunda linha ADC1 da Unidade"-->
+            <div class="col-sm-3"> <h6> <span  class = "label label-primary"> Leitura ADC 1:  </span> </h6>        </div>
+			<div class="col-sm-3">   <input type="text" id = "txtADC1"  class = "form-control" value = "0.0"  readonly >  </div>
+			<div class="col-sm-6">  </div>
+        </div>
+		
+		<p>
+			<div class="row"> <!-- terceira linha ADC2 da Unidade"-->
+            <div class="col-sm-3"> <h6> <span  class = "label label-primary"> Leitura ADC 2:  </span> </h6>        </div>
+			<div class="col-sm-3">   <input type="text" id = "txtADC2"  class = "form-control" value = "0.0"  readonly >  </div>
+			<div class="col-sm-6">  </div>	
+        </div>
+		
+		<p>
+		
+		<div class ="row"> <!-- quarta Linha Led 1 on/off e status"-->
+            <div class="col-sm-3"> <h6> <span  class = "label label-primary"> Led 1:  </span> </h6>        </div>
+			<div class="col-sm-3"> <button type = "button" id = "btnOnLed1" class="btn btn-success"> ON </button>         </div>
+			<div class="col-sm-3"> <button type = "button" id = "btnOffLed1" class="btn btn-success"> OFF </button>         </div>
+			<div class="col-sm-3">   <input type="text" id = "txtLed1Status"  class = "form-control" value = "OFF"  readonly >  </div>						                                                                                  
+        </div>
+		
+		<p>
+		
+		<div class ="row"> <!-- quinta Linha Led 2 on/off e status"-->
+            <div class="col-sm-3"> <h6> <span  class = "label label-primary"> Led 2:  </span> </h6>        </div>
+			<div class="col-sm-3"> <button type = "button" id = "btnOnLed2" class="btn btn-success"> ON </button>         </div>
+			<div class="col-sm-3"> <button type = "button" id = "btnOffLed2" class="btn btn-success"> OFF </button>         </div>
+			<div class="col-sm-3">   <input type="text" id = "txtLed2Status"  class = "form-control" value = "OFF"  readonly >  </div>					                                                                                  
+        </div>
+			
+	</div> <!-- Fecha a div container"-->
+	
+
+	<script src="src/jquery-3.3.1.js"> </script>
+    <script src="src/bootstrap.bundle.min.js"> </script>
+	<script src="logica.js"> </script>
+	
+	
+</body>
+ 
+</html>
