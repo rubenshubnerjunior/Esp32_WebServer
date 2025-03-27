@@ -21,7 +21,7 @@
 #### O display LCD usa o protocolo I2C para economia de pinos que poderão ser usados futuramente.
 #### Todas as bibliotecas usadas estão dentro da pasta bibliotecas.
 #### Como estamos usando webSocket para trocar mensagens o navegador não precisa dar refresh na página para atualizar
-### Observar que o webSocket é assincrono e portanto é acionado quando ocorre eventos.
+#### Observar que o webSocket é assincrono e portanto é acionado quando ocorre eventos.
 #### O código web01.ino está bem comentado e seguindo as chamadas das funções a partir do setup() e depois a partir do loop() é possivel identificar as funcionalidades conforme o diagrama.
 
 #### Sugestões são bem vindas e espero que este repositório ajude em partes de projetos de outras pessoas.
