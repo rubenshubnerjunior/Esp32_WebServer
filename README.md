@@ -32,6 +32,6 @@
 #### O código web01.ino está bem comentado e seguindo as chamadas das funções a partir do setup() e depois a partir do loop() é possivel identificar as funcionalidades conforme o diagrama.
 #### Haaa... o módulo do lado direito do protoboard é o W5500 para conectar o Esp32 via RJ45 na rede mas ainda não implementei !!!
 #### Sugestões são bem vindas e espero que este repositório ajude em partes de projetos de outras pessoas.
-###  Rubens Hübner Junior    PY2 RHJ     ID DMR:7245251 73's
+###  Rubens Hübner Junior       PY2 RHJ       ID DMR:7245251          73's
  
 
