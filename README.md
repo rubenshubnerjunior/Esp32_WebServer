@@ -18,6 +18,8 @@
 - ![alt text](https://github.com/rubenshubnerjunior/Esp32_WebServer/blob/main/gui.jpg)
 #### Além da GUI também é criado no navegador um cliente de webSocket e uma lógica para enviar e receber as mensagens e mostrar o status na GUI.
 #### As mensagens trocadas entre o Esp32 e o Navegador estão no formato JSON para uma melhor escalabilidade.
+#### Exemplo de JSON enviado do ESP32 para o Navegador -> {"adc1":"0.50","adc2":"15.29","led1":"off","led2":"off"}
+
 #### O display LCD usa o protocolo I2C para economia de pinos que poderão ser usados futuramente.
 #### Todas as bibliotecas usadas estão dentro da pasta bibliotecas.
 #### Como estamos usando webSocket para trocar mensagens o navegador não precisa dar refresh na página para atualizar
