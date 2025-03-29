@@ -24,6 +24,7 @@
 #### Exemplo de JSON enviado do ESP32 para o Navegador -> {"adc1":"0.50","adc2":"15.29","led1":"off","led2":"off"}
 #### Exemplo de JSON enviado do Navegador para o ESP32 -> {"led1":"on","led2":"on"}
 #### O objeto JSON é convertido para STRING antes de ser enviado pelo Websocket.
+#### No Esp32 e no Navegador existe funções para converter objeto JSON para String e de String para objeto JSON.
 #### O display LCD usa o protocolo I2C para economia de pinos que poderão ser usados futuramente.
 #### Todas as bibliotecas usadas estão dentro da pasta bibliotecas.
 #### Como estamos usando WebSocket para trocar mensagens o navegador não precisa dar refresh na página para atualizar
