@@ -29,8 +29,8 @@ int lcdColumns = 16;
 int lcdRows = 2;
 LiquidCrystal_I2C lcd(0x27, lcdColumns, lcdRows);
 
-const char* ssid = "hubner"; // Insira o seu SSID
-const char* password =  "*****"; // Insira a sua Senha
+const char* ssid = "hubner"; // Troque pelo seu SSID
+const char* password =  "****"; // Insira a sua Senha
 
 AsyncWebServer server(80); // Transfere arquivos de Front End para o navegador
 AsyncWebSocket ws("/ws"); // Envia e recebe mensagens da logica no navegador com a logica no Esp32
@@ -108,7 +108,7 @@ void trataString(String msgRecebida)
 
   
 }
-//=======Mensagens recebidas do  navegador de config via  Websocket===================
+//=======Mensagens recebidas do  navegador via  Websocket===================
 
 void handleWebSocketMessage(void *arg, uint8_t *data, size_t len) {
   AwsFrameInfo *info = (AwsFrameInfo*)arg;
@@ -175,6 +175,10 @@ void startServidores()
   server.on("/logica.js", HTTP_GET, [](AsyncWebServerRequest * request) { //Envia logica.js para o navegador
     request->send(SPIFFS, "/logica.js", "text/css");
   });
+
+  server.on("/logo.png", HTTP_GET, [](AsyncWebServerRequest * request) { //Envia logo.png para o navegador
+    request->send(SPIFFS, "/logo.png", "image/png");
+  });
 }
 //======================Conecta com o WIFI=====================================
 
@@ -236,7 +240,7 @@ void setup()
 void loop()
 {
   long now = millis(); // Tempo decorrido do programa iniciado 
-   ws.cleanupClients(); // navegadores de configuracao
+   ws.cleanupClients(); // Remove clientes inativos
 
   if (now - tempoSendMsg  > 1000)
   {
