@@ -3,7 +3,7 @@
 #### Com o Servidor de página Web vamos enviar para o navegador HTML, JavaScript, BootStrap, Imagem png.
 #### Com o Servidor WebSocket vamos enviar e receber Strings no formato JSON Entre o Esp32 e o Navegador para fazer comandos e exibir os Status no Navegador.
 #### Para seguir este tutorial é nescessário o conhecimento de como usar a IDE do Arduino para gravar o Esp32.
-#### Também é neceesário fazer o upload da pasta "data" que está junto com o arquivo web01.ino (estar junto é mandatório) para a memória SPIFFS do Esp32 conforme imagem abaixo:
+#### Também é preciso fazer o upload da pasta "data" que está junto com o arquivo web01.ino (estar junto é mandatório) para a memória SPIFFS do Esp32 conforme imagem abaixo:
 - ![alt text](https://github.com/rubenshubnerjunior/Esp32_WebServer/blob/main/data.jpg)
 #### Para isto precisamos descompactar o arquivo ESP32FS-1.0.zip e colar na pasta na instalação da IDE do arduino conforme imagem abaixo:
 - ![alt text](https://github.com/rubenshubnerjunior/Esp32_WebServer/blob/main/tools.jpg)
