@@ -14,7 +14,7 @@
 #### Como se trata de um circuito simples os pinos utilizados está nos comenários do arquivo web01.ino.
 #### Olhando o diagrama simplificado temos uma ideia geral de como funciona o sistema:
 - ![alt text](https://github.com/rubenshubnerjunior/Esp32_WebServer/blob/main/Diagrama_01.jpg)
-#### A pasta "data" que foi gravada na memória SPIFFS tem os arquivos do Front End ( HTML,CSS, Javascript).
+#### A pasta "data" que foi gravada na memória SPIFFS tem os arquivos do Front End ( HTML,CSS, Javascript, Imagem .png).
 #### Quando o navegador faz o Request o servidor de pagina Web envia os arquivos da pasta data para o navegador.
 #### Com estes arquivos o navegador exibe a GUI (Graphical User Interface ou Interface Gráfica do Usuário) conforme imagem abaixo:
 - ![alt text](https://github.com/rubenshubnerjunior/Esp32_WebServer/blob/main/gui.jpg)
