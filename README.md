@@ -26,7 +26,7 @@
 #### O objeto JSON é convertido para STRING antes de ser enviado pelo Websocket.
 #### O display LCD usa o protocolo I2C para economia de pinos que poderão ser usados futuramente.
 #### Todas as bibliotecas usadas estão dentro da pasta bibliotecas.
-#### Como estamos usando webSocket para trocar mensagens o navegador não precisa dar refresh na página para atualizar
+#### Como estamos usando WebSocket para trocar mensagens o navegador não precisa dar refresh na página para atualizar
 #### Observar que o webSocket é assincrono e portanto é acionado quando ocorre eventos.
 #### Para facilitar o entendimento do código a maioria das funções foram escritas fora do setup() e do loop() e chamadas em sequência.
 #### O código web01.ino está bem comentado e seguindo as chamadas das funções a partir do setup() e depois a partir do loop() é possivel identificar as funcionalidades conforme o diagrama.
