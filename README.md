@@ -1,7 +1,7 @@
 # Esp32_WebServer
 #### Este projeto visa dar exemplo de como fazer o Esp32 trabalhar como um servidor de pagina Web e um servidor de websocket.
 #### Para seguir este tutorial é nescessário o conhecimento de como usar a IDE do Arduino para gravar o Esp32.
-#### É neceesário fazer o upload da pasta "data" que está junto com o arquivo web01.ino (estar junto é mandatório) para a memória SPIFFS do Esp32 conforme imagem abaixo:
+#### Também é neceesário fazer o upload da pasta "data" que está junto com o arquivo web01.ino (estar junto é mandatório) para a memória SPIFFS do Esp32 conforme imagem abaixo:
 - ![alt text](https://github.com/rubenshubnerjunior/Esp32_WebServer/blob/main/data.jpg)
 #### Para isto precisamos descompactar o arquivo ESPFS.Zip e colar na pasta na instalação da IDE do arduino conforme imagem abaixo:
 - ![alt text](https://github.com/rubenshubnerjunior/Esp32_WebServer/blob/main/tools.jpg)
@@ -25,6 +25,7 @@
 #### Todas as bibliotecas usadas estão dentro da pasta bibliotecas.
 #### Como estamos usando webSocket para trocar mensagens o navegador não precisa dar refresh na página para atualizar
 #### Observar que o webSocket é assincrono e portanto é acionado quando ocorre eventos.
+#### Para facilitar o entendimento do código a maioria das funções foram escritas fora do setup() e do loop() e chamadas em sequência.
 #### O código web01.ino está bem comentado e seguindo as chamadas das funções a partir do setup() e depois a partir do loop() é possivel identificar as funcionalidades conforme o diagrama.
 #### Haaa... o módulo do lado direito do protoboard é o W5500 para conectar o Esp32 via RJ45 na rede mas ainda não implementei !!!
 #### Sugestões são bem vindas e espero que este repositório ajude em partes de projetos de outras pessoas.
