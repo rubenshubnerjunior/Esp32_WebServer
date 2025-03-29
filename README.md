@@ -16,7 +16,8 @@
 #### Quando o navegador faz o Request o servidor de pagina Web envia os arquivos da pasta data para o navegador.
 #### Com estes arquivos o navegador exibe a GUI (Graphical User Interface ou Interface Gráfica do Usuário) conforme imagem abaixo:
 - ![alt text](https://github.com/rubenshubnerjunior/Esp32_WebServer/blob/main/gui.jpg)
-#### Além da GUI também é criado no navegador um cliente de webSocket e uma lógica para enviar e receber as mensagens e mostrar o status na GUI.
+#### Além da GUI também é criado no navegador um cliente de webSocket e uma lógica.
+#### A lógica.js no navegador recebe informação do Esp32 via websocket e atualisa a GUI bem como envia comando para o Esp32 para fazer o on/off dos leds.
 #### As mensagens trocadas entre o Esp32 e o Navegador estão no formato JSON para uma melhor escalabilidade.
 #### Exemplo de JSON enviado do ESP32 para o Navegador -> {"adc1":"0.50","adc2":"15.29","led1":"off","led2":"off"}
 #### Exemplo de JSON enviado do Navegador para o ESP32 -> {"led1":"on","led2":"on"}
