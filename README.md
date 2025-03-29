@@ -1,5 +1,5 @@
 # Esp32_WebServer
-#### Este projeto visa dar exemplo de como fazer o Esp32 trabalhar como um servidor de páginas Web e um Servidor de Websocket.
+#### Este projeto visa dar exemplo de como fazer o Esp32 trabalhar como um Servidor de páginas Web e um Servidor de Websocket.
 #### Com o Servidor de página Web vamos enviar para o navegador os arquivos de HTML, JavaScript, CSS, BootStrap, Imagem png.
 #### Usaremos o Servidor WebSocket para enviar e receber Strings no formato JSON entre o Esp32 e o Navegador para fazer comandos e exibir os status no Navegador.
 #### Para seguir este tutorial é nescessário o conhecimento de como usar a IDE do Arduino para gravar o Esp32.
