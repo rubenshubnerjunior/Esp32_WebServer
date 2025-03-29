@@ -27,7 +27,7 @@
 #### O display LCD usa o protocolo I2C para economia de pinos que poderão ser usados futuramente.
 #### Todas as bibliotecas usadas estão dentro da pasta bibliotecas.
 #### Como estamos usando WebSocket para trocar mensagens o navegador não precisa dar refresh na página para atualizar
-#### Observar que o webSocket é assincrono e portanto é acionado quando ocorre eventos.
+#### Observar que o WebSocket é assincrono e portanto é acionado quando ocorre eventos.
 #### Para facilitar o entendimento do código a maioria das funções foram escritas fora do setup() e do loop() e chamadas em sequência.
 #### O código web01.ino está bem comentado e seguindo as chamadas das funções a partir do setup() e depois a partir do loop() é possivel identificar as funcionalidades conforme o diagrama.
 #### Haaa... o módulo do lado direito do protoboard é o W5500 para conectar o Esp32 via RJ45 na rede mas ainda não implementei !!!
