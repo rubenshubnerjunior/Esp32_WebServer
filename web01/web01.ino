@@ -14,6 +14,10 @@
  * 
  * Pino do ADC 1 --> GPIO 36 maxima tensao entrada 3.3 V
  * Pino do ADC 2 --> GPIO 39 maxima tensao entrada 3.3 V
+ * 
+ * Arduino IDE 1.8.19
+ * Core Esp32-> 3.2.0
+ * 
  */
 
 
@@ -30,7 +34,7 @@ int lcdRows = 2;
 LiquidCrystal_I2C lcd(0x27, lcdColumns, lcdRows);
 
 const char* ssid = "hubner"; // Troque pelo seu SSID
-const char* password =  "****"; // Insira a sua Senha
+const char* password =  "@txtv3457"; // Insira a sua Senha
 
 AsyncWebServer server(80); // Transfere arquivos de Front End para o navegador
 AsyncWebSocket ws("/ws"); // Envia e recebe mensagens da logica no navegador com a logica no Esp32
