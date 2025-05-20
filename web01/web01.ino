@@ -6,8 +6,8 @@
  * usa o webSocket para trocar mensagens com o Esp32 de maneira assincrona.
  * 
  * O display I2C usa os pinos:
- * SDA--> GPIO 21
- * SCL--> GPIO 22
+ * SDA--> GPIO 33
+ * SCL--> GPIO 32
  * 
  * Led 1 GPIO 19 com 180 ohms em serie katodo no GND
  * Led 2 GPIO 18 com 180 ohms em serie katodo no GND
@@ -34,7 +34,7 @@ int lcdRows = 2;
 LiquidCrystal_I2C lcd(0x27, lcdColumns, lcdRows);
 
 const char* ssid = "hubner"; // Troque pelo seu SSID
-const char* password =  "*******"; // Insira a sua Senha
+const char* password =  "******"; // Insira a sua Senha
 
 AsyncWebServer server(80); // Transfere arquivos de Front End para o navegador
 AsyncWebSocket ws("/ws"); // Envia e recebe mensagens da logica no navegador com a logica no Esp32
@@ -214,6 +214,7 @@ void showDisplay(String linha1, String linha2)
 void setup()
 {
   Serial.begin(115200);   // Iniciamos a serial com velocidade de 115200
+  Wire.begin(33, 32);  // SDA = GPIO33, SCL = GPIO32 
 
   lcd.init();
   lcd.backlight();
