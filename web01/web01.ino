@@ -33,13 +33,13 @@ int lcdColumns = 16;
 int lcdRows = 2;
 LiquidCrystal_I2C lcd(0x27, lcdColumns, lcdRows);
 
-<<<<<<< HEAD
+
 const char* ssid = "TecnicaGC2"; // Troque pelo seu SSID
-const char* password =  "tecnica@gc2"; // Insira a sua Senha
-=======
-const char* ssid = "hubner"; // Troque pelo seu SSID
-const char* password =  "********"; // Insira a sua Senha
->>>>>>> e26069da3ea2be30e3278fc7c0d8b3722ffa8f4f
+const char* password =  "*******"; // Insira a sua Senha
+
+//const char* ssid = "hubner"; // Troque pelo seu SSID
+//const char* password =  "********"; // Insira a sua Senha
+
 
 AsyncWebServer server(80); // Transfere arquivos de Front End para o navegador
 AsyncWebSocket ws("/ws"); // Envia e recebe mensagens da logica no navegador com a logica no Esp32
