@@ -9,8 +9,8 @@
  * SDA--> GPIO 33
  * SCL--> GPIO 32
  * 
- * Led 1 GPIO 19 com 180 ohms em serie katodo no GND
- * Led 2 GPIO 18 com 180 ohms em serie katodo no GND
+ * Led 1 GPIO 2 com 180 ohms em serie katodo no GND
+ * Led 2 GPIO 5 com 180 ohms em serie katodo no GND
  * 
  * Pino do ADC 1 --> GPIO 36 maxima tensao entrada 3.3 V
  * Pino do ADC 2 --> GPIO 39 maxima tensao entrada 3.3 V
@@ -33,8 +33,13 @@ int lcdColumns = 16;
 int lcdRows = 2;
 LiquidCrystal_I2C lcd(0x27, lcdColumns, lcdRows);
 
+<<<<<<< HEAD
 const char* ssid = "TecnicaGC2"; // Troque pelo seu SSID
 const char* password =  "tecnica@gc2"; // Insira a sua Senha
+=======
+const char* ssid = "hubner"; // Troque pelo seu SSID
+const char* password =  "********"; // Insira a sua Senha
+>>>>>>> e26069da3ea2be30e3278fc7c0d8b3722ffa8f4f
 
 AsyncWebServer server(80); // Transfere arquivos de Front End para o navegador
 AsyncWebSocket ws("/ws"); // Envia e recebe mensagens da logica no navegador com a logica no Esp32
@@ -50,8 +55,8 @@ long tempoSendMsg = 0; // Tempo de envio de mensagens para o navegador
 const int pinADC1 = 36; // GPIO 36 (Analog ADC1_CH0)
 const int pinADC2 = 39; // GPIO 39 (Analog ADC1_CH3)
 
-const int swLed1 = 19; // pino ligar/desligar led 1
-const int swLed2 = 18; // pino ligar/desligar led 2
+const int swLed1 = 2 ; // pino ligar/desligar led 1
+const int swLed2 = 5; // pino ligar/desligar led 2
 
 //=================Leituras dos ADCs================================
 void getAds()
